@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annarapu Nithin | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; transition: background 0.5s, color 0.5s; background: #fdfdfd; }
+    header { background: linear-gradient(135deg, #000428, #004e92); color: white; padding: 60px 20px; text-align: center; animation: fadeIn 1.5s ease; position: relative; overflow: hidden; }
+    header h1 { margin: 0; font-size: 42px; }
+    header p { font-size: 18px; color: #ddd; max-width: 700px; margin: 10px auto 20px; }
+    header span#typed { font-weight: bold; color: #00e0ff; }
+    nav { background: #111; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #00bcd4; }
+    section { padding: 60px 20px; animation: fadeIn 1s ease-in-out; }
+    .about, .skills, .projects, .contact { max-width: 1000px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 30px; position: relative; }
+    h2::after { content: ''; display: block; width: 60px; height: 4px; background: #00bcd4; margin: 10px auto 0; border-radius: 2px; }
+    .skills ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+    .skills li { margin: 10px 15px; background: #f1f1f1; padding: 10px 20px; border-radius: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .skills li:hover { transform: scale(1.1); background: #e0f7fa; }
+    .projects .project { background: #f9f9f9; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); animation: fadeInUp 1s ease; }
+    .project a { display: inline-block; margin-top: 10px; color: #007acc; text-decoration: none; font-weight: bold; }
+    .project a:hover { text-decoration: underline; }
+    footer { background: #000; color: white; text-align: center; padding: 30px 10px; }
+    .socials a { margin: 0 10px; color: white; font-size: 20px; transition: color 0.3s; }
+    .socials a:hover { color: #00bcd4; }
+    .download-btn { display: inline-block; padding: 10px 20px; background: #00bcd4; color: white; border: none; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s, transform 0.3s; }
+    .download-btn:hover { background: #008cba; transform: scale(1.05); }
+    .profile-img { width: 150px; border-radius: 50%; border: 3px solid #00bcd4; margin: 20px auto; display: block; animation: pulse 2s infinite; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile Image" class="profile-img">
+    <h1>Annarapu Nithin</h1>
+    <p><span id="typed"></span></p>
+    <a class="download-btn" href="resume.pdf" download>Download Resume</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Annarapu Nithin, currently pursuing B.Tech in Artificial Intelligence and Machine Learning at SR University. I'm passionate about building web applications, working with data, and solving real-world problems using technology. I enjoy exploring the latest advancements in AI and creating solutions that have practical impact.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>C</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>River_CleaningBoat</h3>
+      <p>This project involves the design and development of a remote-operated floating machine to clean surface waste from rivers and ponds. It uses renewable energy and smart control systems to collect plastic, debris, and other floating impurities efficiently.</p>
+      <a href="https://github.com/Annarapu-Nithin/River_CleaningBoat" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <h3>Sentiment Analysis</h3>
+      <p>Performed sentiment analysis on Twitter data using TF-IDF vectorization and machine learning models like Logistic Regression, SVM, and Random Forest. Preprocessed text using NLTK and TextBlob, achieving accurate classification of positive, negative, neutral, and irrelevant tweets.</p>
+      <a href="https://github.com/Annarapu-Nithin/Sentiment_Analysis_Tweeter" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <h3>Indian Language Detection</h3>
+      <p>Developed a machine learning model to detect Indian languages from text using TF-IDF vectorization and classifiers like Naive Bayes, Logistic Regression, and SVM. Preprocessed multilingual text data and evaluated models using accuracy and classification metrics.</p>
+      <a href="https://github.com/Annarapu-Nithin/Indian_Language_detection" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <h3>Facial Emotion Recognition</h3>
+      <p>Built a CNN-based facial emotion recognition model using the FER-2013 dataset, achieving 75% accuracy across 7 emotion classes. Implemented SHAP for model interpretability and enhanced performance with data augmentation and regularization techniques.</p>
+      <a href="https://github.com/Annarapu-Nithin/Facial_Emotion" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <h3>Heart Disease Detection</h3>
+      <p>This project focuses on detecting heart disease using machine learning algorithms like Logistic Regression, SVM, Decision Tree, and MLP. It aims to build accurate predictive models from patient data to enhance early diagnosis and reduce risks.</p>
+      <a href="https://github.com/Annarapu-Nithin/2203A52071-heart-disease-detection" target="_blank">GitHub Link</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me via email at <strong>annarapunithin@gmail.com</strong> or through my social media links below.</p>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/Annarapu-Nithin" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nithin-annarapu" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:annarapunithin@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Annarapu Nithin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["Web Developer", "AI/ML Enthusiast", "Problem Solver", "Tech Explorer"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+</html>
